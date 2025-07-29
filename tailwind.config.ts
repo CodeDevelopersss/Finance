@@ -1,13 +1,13 @@
 import type { Config } from "tailwindcss";
 
-const config = {
-  darkMode: ["class"],
+const config: Config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./constants/**/*.{ts,tsx}",
+    "./constants/**/*.{ts,tsx,js}",
   ],
   prefix: "",
   theme: {
@@ -24,6 +24,7 @@ const config = {
           1: "rgba(255, 255, 255, 0.10)",
         },
         bankGradient: "#0179FE",
+
         indigo: {
           500: "#6172F3",
           700: "#3538CD",

@@ -6,9 +6,11 @@ import BankCard from './BankCard'
 const RightSidebar = ( { user, transactions, banks}:
 
  RightSidebarProps) => {
+    if(!user) return null;
+  
   return (
     <aside className="right-sidebar">
-        <section className="fles fles-col pb-8">
+        <section className="flex flex-col pb-8">
             <div className="profile-banner" />
             <div className="profile">
                 <div className="profile-img">
